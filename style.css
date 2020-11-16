@@ -52,8 +52,8 @@ header.scrol div#menu ul li a{
     color: #000;
 }
 
-header.scrol div#menu ul li a:hover{
-    color: #888;
+header.scrol div#menu ul li a:hover span{
+    background-color: #000;
 }
 
 header div#menu ul{
@@ -67,16 +67,29 @@ header div#menu ul li{
 }
 
 header div#menu ul li a{
-    padding: 20px 30px;
+    margin: 20px 30px;
 
     text-decoration: none;
     font-size: 1.1em;
 
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
+    position: relative;
 }
 
-header div#menu ul li a:hover{
-    color: #a2a2a2;
+header div#menu ul li a span{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 0.35s ease-in-out;
+
+    width: 0%;
+    height: 3px;
+
+    background-color: #fff;
+}
+
+header div#menu ul li a:hover span{
+    width: 100%;
 }
 
 header div#logo a{
