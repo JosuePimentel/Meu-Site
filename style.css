@@ -30,10 +30,30 @@ body{
 
 header{
     grid-area: h;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+}
+
+header.scrol{
+    background-color: #fff;
+
+    height: 80px;
+
+    transition: 0.5s ease-in-out;
+}
+
+header.scrol div#logo a,
+header.scrol div#menu ul li a{
+    color: #000;
+}
+
+header.scrol div#menu ul li a:hover{
+    color: #888;
 }
 
 header div#menu ul{
